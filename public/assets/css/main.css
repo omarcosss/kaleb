@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    text-decoration: none;
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+}
+.convite{
+    display: flex;
+    height: 100dvh;
+    width: 100dvw;
+    justify-content: center;
+    align-items: center;
+}
+.leao{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    max-height: 40dvh;
+    object-fit: contain;
+    /* position: inherit; */
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 70dvw;
+    max-width: 400px;
+    height: fit-content;
+    position: relative;
+    padding-top: 40px;
+    gap: 30px;
+}
+.nome{
+    width: 120%;
+    max-width: 350px;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.info{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.info-div{
+    display: flex;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 1rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-direction: column;
+    width: 100px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.info-div.data{
+    text-wrap: nowrap;
+}
+.info-div.local{
+    font-size: 24px;
+}
+.info .hora{
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+.info-div span{
+    font-size: 60px;
+    font-weight: 800;
+}
+.info-div button{
+    position: absolute;
+    display: none;
+}
+.convite a.ver-mais{
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*  */
+
