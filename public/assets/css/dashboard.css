@@ -1,0 +1,90 @@
+body{
+    background: #FFF5E1;
+    list-style: none;
+
+}
+.container{
+    margin: 50px auto auto auto;
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 80dvw;
+}
+
+/* LISTA */
+.list-selector{
+    display: flex;
+    gap: 25px;
+}
+.list-selector button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    border-radius: 25px;
+    font-size: 14px;
+    background: none;
+    color: #ACACAC;
+    border: 1px solid #ACACAC;
+    box-shadow: var(--sombra);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.list-selector button.selected{
+    background: #A2B36B;
+    color: #FFFFFF;
+    font-weight: 700;
+    border: none;
+}
+ul{
+    flex-direction: column;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+ul.selected-list{
+    display: flex;
+}
+.list-item{
+    box-shadow: var(--sombra);
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 20px;
+    /*width: 100%;*/
+}
+.nome-lista{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* MINI DASH */
+.dash-container{
+    display: flex;
+    gap: 25px;
+
+}
+.dash-box{
+    box-shadow: var(--sombra);
+    display: flex;
+    border-radius: 25px;
+    height: 65px;
+    font-weight: 700;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    width: 100%;
+    vertical-align: middle;
+    gap: 15px;
+
+}
+.qnt-casas{
+    color: #F28F3B;
+}
+.qnt-convidados{
+    color: #606C38;
+}

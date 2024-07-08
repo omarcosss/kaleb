@@ -13,7 +13,7 @@ class GuestController extends Controller
         $request->validate([
             'presenca' => 'required|boolean',
             'nome' => 'required|string|max:255',
-            'qnt_acompanhantes' => 'required|integer',
+            'qnt_acompanhantes' => 'integer|default:0',
             'alergias' => 'nullable|string|max:255',
         ]);
 
@@ -26,6 +26,6 @@ class GuestController extends Controller
         ]);
 
         // Redirecionamento com mensagem de sucesso
-        return redirect()->back()->with('success', 'Confirmação enviada com sucesso!');
+        return redirect('/#ver-mais')->with('success', 'Confirmação enviada com sucesso!');
     }
 }
