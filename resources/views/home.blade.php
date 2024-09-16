@@ -50,6 +50,25 @@
                     {{ session('success') }}
                 </div>
             @endif
+            <div class="info-desktop">
+                <div class="info-div data">
+                    <span>24</span>
+                    de novembro
+                    <button class="botao-calendario">
+                        <img src="{{ asset('assets/images/add-to-calendar.svg') }}" alt="adicionar ao calendário" title="Adicionar ao calendário">
+                    </button>
+                </div>
+                <div class="info-div hora">
+                    <span>18</span>
+                    horas
+                </div>
+                <div class="info-div local">
+                    minha casa
+                    <button class="botao-mapa">
+                        <img src="{{ asset('assets/images/ver-no-mapa.svg') }}" alt="ver no mapa" title="Ver no mapa">
+                    </button>
+                </div>
+            </div>
             <img src="{{ asset("assets/images/rainbow.png") }}" alt="Arco-íris" class="rainbow">
             <img src="{{ asset("assets/images/base-ver-mais.png") }}" alt="Chão" class="floor">
             <img src="{{ asset("assets/images/tree.png") }}" alt="Árvore" class="tree">
@@ -84,6 +103,7 @@
                     Adicionar ao calendário
                 </a>
             </div>
+
         </section>
     </div>
 

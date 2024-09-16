@@ -88,7 +88,7 @@ body{
     position: absolute;
     z-index: 3;
     bottom: -10%;
-    max-height: 100%;
+    /*max-height: 100%;*/
 }
 .arvores{
     position: absolute;
@@ -335,6 +335,9 @@ body{
 .hidden {
     display: none;
 }
+.info-desktop{
+    display: none;
+}
 
 /* MODAL */
 .modal-bg{
@@ -383,7 +386,9 @@ body{
         display: none;
     }
     .base{
-        bottom: -26%;
+        bottom: -40%;
+        width: 110%;
+        /*height: auto;*/
     }
     .convite a.ver-mais{
         display: none;
@@ -392,14 +397,14 @@ body{
         bottom: 5%;
     }
     .nome{
-        bottom: 45%;
-        width: 85%;
+        bottom: 50%;
+        width: 60%;
     }
     .sol{
         left: -10%;
     }
     .convite{
-        overflow: hidden;
+        overflow: visible;
     }
     .floor{
         width: 130%;
@@ -413,8 +418,16 @@ body{
     .options{
         padding: 20dvh 0;
     }
-
-
+    #ver-mais{
+        overflow: visible;
+    }
+    .info-desktop{
+        display: flex;
+        color: #606C38;
+    }
+    .info{
+        display: none;
+    }
 
 }
 
