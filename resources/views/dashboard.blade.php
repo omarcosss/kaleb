@@ -1,6 +1,8 @@
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('assets/css/dashboard.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
     <title>Dashboard</title>
@@ -32,30 +34,24 @@
         <ul id="vai-list" class="selected-list">
             @foreach($guestsVao as $guest)
                 <li class="list-item">
-                    <div class="nome-lista">
+                    <span class="nome-lista">
                         {{ $guest->nome }}
-                    </div>
-                    <div class="acompanhantes">
-                        Acompanhantes: {{ $guest->qnt_acompanhantes }}
-                    </div>
-                    <div class="alergias">
-                        Alergias: {{ $guest->alergias }}
-                    </div>
+                    </span>
+                    <span class="acompanhantes">
+                        <span>Acompanhantes:</span> {{ $guest->qnt_acompanhantes }}
+                    </span>
+                    <span class="alergias">
+                        <span>Alergias:</span> {{ $guest->alergias }}
+                    </span>
                 </li>
             @endforeach
         </ul>
         <ul id="nao-list">
             @foreach($guestsNao as $guest)
                 <li class="list-item">
-                    <div class="nome-lista">
+                    <span class="nome-lista">
                         {{ $guest->nome }}
-                    </div>
-                    <div class="acompanhantes">
-                        Acompanhantes: {{ $guest->qnt_acompanhantes }}
-                    </div>
-                    <div class="alergias">
-                        Alergias: {{ $guest->alergias }}
-                    </div>
+                    </span>
                 </li>
             @endforeach
         </ul>

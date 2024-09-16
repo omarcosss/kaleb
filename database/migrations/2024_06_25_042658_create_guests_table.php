@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->boolean('presenca');
             $table->string('nome');
-            $table->integer('qnt_acompanhantes');
+            $table->integer('qnt_acompanhantes')->nullable();
             $table->string('alergias')->nullable();
             $table->timestamps();
         });

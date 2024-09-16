@@ -21,18 +21,9 @@
                     <label for="nao-presenca">Vo nada!</label>
                 </div>
             </div>
-            <div>
-{{--                <label for="nome">Nome:</label>--}}
-                <input type="text" id="nome" name="nome" required placeholder="Nome e sobrenome">
-            </div>
-            <div>
-{{--                <label for="qnt_acompanhantes">Quantidade de Acompanhantes:</label>--}}
-                <input type="number" id="qnt_acompanhantes" name="qnt_acompanhantes" required placeholder="Quantidade de acompanhantes">
-            </div>
-            <div>
-{{--                <label for="alergias">Alergias:</label>--}}
-                <input type="text" id="alergias" name="alergias" placeholder="Alguma alergia ou restrição alimentar?">
-            </div>
+            <input type="text" id="nome" name="nome" required placeholder="Nome e sobrenome">
+            <input type="number" id="qnt_acompanhantes" name="qnt_acompanhantes" placeholder="Quantidade de acompanhantes">
+            <input type="text" id="alergias" name="alergias" placeholder="Alguma alergia ou restrição alimentar?">
             <button type="submit">Confirmar</button>
         </form>
     </div>

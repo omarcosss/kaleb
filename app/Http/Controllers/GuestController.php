@@ -9,11 +9,14 @@ class GuestController extends Controller
 {
     public function store(Request $request)
     {
+        $request->merge([
+            'qnt_acompanhantes' => $request->input('qnt_acompanhantes', 0), // Definindo 0 se não enviado
+        ]);
         // Validação dos dados
         $request->validate([
             'presenca' => 'required|boolean',
             'nome' => 'required|string|max:255',
-            'qnt_acompanhantes' => 'integer|default:0',
+            'qnt_acompanhantes' => 'nullable|integer|min:0',
             'alergias' => 'nullable|string|max:255',
         ]);
 

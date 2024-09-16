@@ -1,7 +1,6 @@
 body{
     background: #FFF5E1;
     list-style: none;
-
 }
 .container{
     margin: 50px auto auto auto;
@@ -10,7 +9,6 @@ body{
     flex-direction: column;
     width: 80dvw;
 }
-
 /* LISTA */
 .list-selector{
     display: flex;
@@ -27,11 +25,11 @@ body{
     background: none;
     color: #ACACAC;
     border: 1px solid #ACACAC;
-    box-shadow: var(--sombra);
     text-transform: uppercase;
     cursor: pointer;
 }
 .list-selector button.selected{
+    box-shadow: var(--sombra);
     background: #A2B36B;
     color: #FFFFFF;
     font-weight: 700;
@@ -56,9 +54,19 @@ ul.selected-list{
     padding: 20px;
     /*width: 100%;*/
 }
+.list-item span span{
+    color: #ACACAC;
+    font-size: 14px;
+    text-transform: none;
+}
 .nome-lista{
     font-size: 18px;
     font-weight: 700;
+    text-transform: capitalize;
+}
+.acompanhantes, .alergias{
+    font-size: 14px;
+    text-transform: uppercase;
 }
 
 /* MINI DASH */
